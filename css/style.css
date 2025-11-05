@@ -30,7 +30,6 @@ header {
   align-items: center;
   padding: 1rem 5%;
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 .logo {
@@ -71,10 +70,13 @@ nav ul li a.activo {
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  margin-left: 10px; /* Mueve el botón a la derecha */
+  display: inline-block;
 }
 
 .btn-reserva:hover {
   background-color: #701574;
+  color: white;
 }
 /* Main contentenido de area */
 main {
