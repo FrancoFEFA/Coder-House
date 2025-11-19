@@ -24,44 +24,32 @@ header {
   z-index: 1000;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 5%;
-  max-width: 1200px;
+/* Bootstrap navbar: mantener color del logo y centrar enlaces */
+.navbar {
+  background-color: #fae6fd !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.navbar .navbar-brand img {
+  height: 80px;
+  object-fit: contain;
 }
 
-/* Navegación principal */
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
+.navbar-nav.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #333333;
-  font-weight: 500;
-  padding: 0.5rem 0;
+@media (max-width: 768px) {
+  .navbar .navbar-brand img {
+    height: 60px;
+  }
+  .navbar-nav.mx-auto {
+    margin: 0 !important;
+  }
 }
 
-nav ul li a:hover {
-  color: #333333;
-}
-
-nav ul li a.activo {
-  color: #333333;
-  border-bottom: 2px solid #ceade5;
-}
+/* Navegación antigua eliminada: ahora se usa Bootstrap navbar */
 
 .btn-reserva {
   background-color: #ceade5;
@@ -353,11 +341,8 @@ footer {
     margin-top: 110px;
   }
 
-  .nav-container {
-    padding: 0.75rem 3%;
-  }
-
-  .logo img {
+  /* Ajustes para navbar de Bootstrap */
+  .navbar .navbar-brand img {
     height: 70px;
   }
 
@@ -384,16 +369,9 @@ footer {
     margin-top: 130px;
   }
 
-  .nav-container {
-    flex-wrap: wrap;
-    align-items: flex-start;
+  /* Ajustes para navbar de Bootstrap en móvil */
+  .navbar-nav {
     gap: 0.5rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
   }
 
   .btn-reserva {
@@ -428,7 +406,7 @@ footer {
     margin-top: 150px;
   }
 
-  .logo img {
+  .navbar .navbar-brand img {
     height: 60px;
   }
 
