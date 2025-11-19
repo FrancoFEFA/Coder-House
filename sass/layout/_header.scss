@@ -1,0 +1,23 @@
+header {
+  background-color: $color-fondo;
+  box-shadow: $sombra-suave;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  background-color: $color-fondo !important;
+  box-shadow: $sombra-navbar;
+
+  .navbar-brand img {
+    height: 80px;
+    object-fit: contain;
+  }
+
+  .navbar-nav.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

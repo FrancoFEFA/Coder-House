@@ -1,0 +1,11 @@
+body {
+  font-family: $fuente-principal;
+  line-height: $line-height-base;
+  color: $color-texto;
+  background-color: $color-fondo;
+}
+
+main {
+  margin-top: 100px;
+  min-height: calc(100vh - 200px);
+}

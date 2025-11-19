@@ -1,0 +1,44 @@
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: $espaciado-lg;
+  margin-top: $espaciado-lg;
+}
+
+.servicio-card {
+  background: $color-blanco;
+  border-radius: $border-radius-md;
+  padding: $espaciado-lg;
+  text-align: center;
+  box-shadow: $sombra-suave;
+  border: 1px solid $color-borde;
+  @include transition(transform);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $sombra-media;
+  }
+}
+
+.servicio-icon {
+  font-size: 3rem;
+  margin-bottom: $espaciado-sm;
+}
+
+.servicio-card h3 {
+  color: $color-texto;
+  margin-bottom: $espaciado-sm;
+  font-size: $texto-xl;
+}
+
+.servicio-card p {
+  color: $color-gris;
+  margin-bottom: 1.5rem;
+}
+
+.precio {
+  font-size: $texto-2xl;
+  font-weight: bold;
+  color: $color-primario;
+  margin-bottom: $espaciado-sm;
+}

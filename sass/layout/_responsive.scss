@@ -1,0 +1,98 @@
+@include respond-to(lg) {
+  main {
+    margin-top: 110px;
+  }
+
+  .navbar .navbar-brand img {
+    height: 70px;
+  }
+
+  .hero {
+    padding: $espaciado-2xl 2rem;
+  }
+
+  .galeria-item {
+    height: 220px;
+  }
+
+  .servicio-card {
+    padding: 1.5rem;
+  }
+
+  section {
+    padding: 2.5rem 3%;
+  }
+}
+
+@include respond-to(md) {
+  main {
+    margin-top: 130px;
+  }
+
+  .navbar {
+    .navbar-brand img {
+      height: 60px;
+    }
+
+    .navbar-nav.mx-auto {
+      margin: 0 !important;
+    }
+  }
+
+  .navbar-nav {
+    gap: $espaciado-xs;
+  }
+
+  .btn-reserva {
+    margin-left: 0;
+    align-self: flex-end;
+    margin-top: $espaciado-xs;
+  }
+
+  .hero {
+    h1 {
+      font-size: $texto-3xl;
+    }
+
+    p {
+      font-size: $texto-sm;
+    }
+  }
+
+  .galeria-item {
+    height: 180px;
+  }
+
+  .page-header h1 {
+    font-size: $texto-3xl;
+  }
+
+  .servicios-grid {
+    gap: $espaciado-sm;
+  }
+}
+
+@include respond-to(sm) {
+  main {
+    margin-top: 150px;
+  }
+
+  .navbar .navbar-brand img {
+    height: 60px;
+  }
+
+  .galeria-item {
+    height: 150px;
+  }
+
+  .btn-hero,
+  .btn-reserva,
+  .btn-enviar {
+    padding: 0.6rem 1rem;
+    font-size: $texto-xs;
+  }
+
+  section {
+    padding: $espaciado-lg 1.5rem;
+  }
+}

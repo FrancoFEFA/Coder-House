@@ -1,0 +1,16 @@
+.hero {
+  background: $color-primario;
+  text-align: center;
+  padding: $espaciado-2xl 5%;
+
+  h1 {
+    font-size: $texto-4xl;
+    margin-bottom: $espaciado-sm;
+  }
+
+  p {
+    font-size: $texto-lg;
+    margin-bottom: $espaciado-lg;
+    opacity: 0.9;
+  }
+}

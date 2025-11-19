@@ -1,0 +1,24 @@
+// Mixin para media queries (igual que tus breakpoints)
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: #{$breakpoint-sm}) { @content; }
+  }
+  @if $breakpoint == md {
+    @media (max-width: #{$breakpoint-md}) { @content; }
+  }
+  @if $breakpoint == lg {
+    @media (max-width: #{$breakpoint-lg}) { @content; }
+  }
+}
+
+// Mixin para transiciones (como las que tienes en hover)
+@mixin transition($property: all) {
+  transition: $property 0.3s ease;
+}
+
+// Mixin para flexbox centrado
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

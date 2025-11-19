@@ -1,0 +1,59 @@
+.btn-reserva {
+  background-color: $color-primario;
+  color: black;
+  padding: $espaciado-sm $espaciado-lg;
+  border-radius: $border-radius-btn;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+  display: inline-block;
+  @include transition;
+
+  &:hover {
+    background-color: $color-secundario;
+    color: white;
+  }
+}
+
+.btn-hero {
+  background-color: $color-primario;
+  color: white;
+  border: 2px solid white;
+  padding: $espaciado-sm $espaciado-lg;
+  border-radius: $border-radius-btn;
+  text-decoration: none;
+  font-weight: bold;
+  @include transition;
+
+  &:hover {
+    background-color: $color-secundario;
+  }
+
+  &.secundario {
+    background-color: $color-primario;
+    color: white;
+    border: 2px solid white;
+
+    &:hover {
+      background-color: $color-secundario;
+      color: white;
+    }
+  }
+}
+
+.btn-enviar {
+  background-color: $color-rosa;
+  color: white;
+  border: none;
+  padding: $espaciado-sm $espaciado-lg;
+  border-radius: $border-radius-btn;
+  font-size: $texto-sm;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  @include transition;
+
+  &:hover {
+    background-color: $color-rosa-oscuro;
+  }
+}

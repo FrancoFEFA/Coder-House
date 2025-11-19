@@ -1,0 +1,51 @@
+// Colores (extraídos de tu CSS)
+$color-primario: #ceade5;
+$color-secundario: #701574;
+$color-fondo: #fae6fd;
+$color-texto: #333333;
+$color-blanco: #ffffff;
+$color-gris: #666666;
+$color-gris-claro: #f9f9f9;
+$color-borde: #e0e0e0;
+$color-footer: #2c2c2c;
+$color-social: #444;
+$color-dorado: #ffd700;
+$color-rosa: #e91e63;
+$color-rosa-oscuro: #c2185b;
+
+// Tipografía
+$fuente-principal: "Arial", sans-serif;
+$line-height-base: 1.6;
+
+// Tamaños de fuente
+$texto-xs: 0.9rem;
+$texto-sm: 1rem;
+$texto-md: 1.1rem;
+$texto-lg: 1.2rem;
+$texto-xl: 1.3rem;
+$texto-2xl: 1.5rem;
+$texto-3xl: 1.8rem;
+$texto-4xl: 2.5rem;
+
+// Espaciados
+$espaciado-xs: 0.5rem;
+$espaciado-sm: 1rem;
+$espaciado-md: 1.5rem;
+$espaciado-lg: 2rem;
+$espaciado-xl: 3rem;
+$espaciado-2xl: 4rem;
+
+// Breakpoints (igual que tus media queries)
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
+// Bordes
+$border-radius: 8px;
+$border-radius-md: 10px;
+$border-radius-btn: 25px;
+
+// Sombras
+$sombra-suave: 0 2px 10px rgba(0, 0, 0, 0.1);
+$sombra-media: 0 10px 25px rgba(0, 0, 0, 0.15);
+$sombra-navbar: 0 2px 8px rgba(0, 0, 0, 0.06);

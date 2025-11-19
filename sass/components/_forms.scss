@@ -1,0 +1,31 @@
+.form-contacto {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 5px;
+
+  label {
+    display: block;
+    margin-bottom: $espaciado-xs;
+    font-weight: bold;
+    color: $color-texto;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid $color-borde;
+    border-radius: 5px;
+    font-size: $texto-sm;
+
+    &:focus {
+      outline: none;
+      border-color: $color-primario;
+      box-shadow: 0 0 0 2px rgba($color-primario, 0.1);
+    }
+  }
+}

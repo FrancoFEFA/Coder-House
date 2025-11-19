@@ -1,6 +1,3 @@
-/* style.css - ESTILOS COMPARTIDOS PARA TODAS LAS PÁGINAS */
-
-/* Reset y variables */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +11,11 @@ body {
   background-color: #fae6fd;
 }
 
-/* Header y Navegación COMPARTIDOS */
+main {
+  margin-top: 100px;
+  min-height: calc(100vh - 200px);
+}
+
 header {
   background-color: #fae6fd;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -24,97 +25,19 @@ header {
   z-index: 1000;
 }
 
-/* Bootstrap navbar: mantener color del logo y centrar enlaces */
 .navbar {
   background-color: #fae6fd !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
-
 .navbar .navbar-brand img {
   height: 80px;
   object-fit: contain;
 }
-
-.navbar-nav.mx-auto {
+.navbar .navbar-nav.mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
-@media (max-width: 768px) {
-  .navbar .navbar-brand img {
-    height: 60px;
-  }
-  .navbar-nav.mx-auto {
-    margin: 0 !important;
-  }
-}
-
-/* Navegación antigua eliminada: ahora se usa Bootstrap navbar */
-
-.btn-reserva {
-  background-color: #ceade5;
-  color: black;
-  padding: 1rem 2rem;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-left: 10px; /* Mueve el botón a la derecha */
-  display: inline-block;
-}
-
-.btn-reserva:hover {
-  background-color: #701574;
-  color: white;
-}
-/* Main contentenido de area */
-main {
-  margin-top: 100px;
-  min-height: calc(100vh - 200px);
-}
-/* Hero Section */
-.hero {
-  background: #ceade5;
-  text-align: center;
-  padding: 4rem 5%;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-}
-
-.btn-hero {
-  background-color: #ceade5;
-  color: white;
-  border: 2px solid white;
-  padding: 1rem 2rem;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn-hero:hover {
-  background-color: #701574;
-}
-
-.btn-hero.secundario {
-  background-color: #ceade5;
-  color: white;
-  border: 2px solid white;
-}
-
-.btn-hero.secundario:hover {
-  background-color: #701574;
-  color: white;
-}
-
-/* Secciones generales */
 section {
   padding: 4rem 5%;
   max-width: 1200px;
@@ -125,19 +48,207 @@ section {
   text-align: center;
   margin-bottom: 3rem;
 }
-
 .page-header h1 {
   font-size: 2.5rem;
   color: #ceade5;
   margin-bottom: 1rem;
 }
-
 .page-header p {
   font-size: 1.1rem;
   color: #666666;
 }
 
-/* Grid de servicios */
+footer {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 3rem 5%;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h3 {
+  color: #ffd700;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.footer-section p,
+.footer-section a {
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.footer-section p:hover,
+.footer-section a:hover {
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #444;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.social-links a:hover {
+  background-color: #ceade5;
+  transform: translateY(-2px);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #444;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  main {
+    margin-top: 110px;
+  }
+  .navbar .navbar-brand img {
+    height: 70px;
+  }
+  .hero {
+    padding: 4rem 2rem;
+  }
+  .galeria-item {
+    height: 220px;
+  }
+  .servicio-card {
+    padding: 1.5rem;
+  }
+  section {
+    padding: 2.5rem 3%;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    margin-top: 130px;
+  }
+  .navbar .navbar-brand img {
+    height: 60px;
+  }
+  .navbar .navbar-nav.mx-auto {
+    margin: 0 !important;
+  }
+  .navbar-nav {
+    gap: 0.5rem;
+  }
+  .btn-reserva {
+    margin-left: 0;
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .galeria-item {
+    height: 180px;
+  }
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+  .servicios-grid {
+    gap: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  main {
+    margin-top: 150px;
+  }
+  .navbar .navbar-brand img {
+    height: 60px;
+  }
+  .galeria-item {
+    height: 150px;
+  }
+  .btn-hero,
+  .btn-reserva,
+  .btn-enviar {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  section {
+    padding: 2rem 1.5rem;
+  }
+}
+.btn-reserva {
+  background-color: #ceade5;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.btn-reserva:hover {
+  background-color: #701574;
+  color: white;
+}
+
+.btn-hero {
+  background-color: #ceade5;
+  color: white;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-hero:hover {
+  background-color: #701574;
+}
+.btn-hero.secundario {
+  background-color: #ceade5;
+  color: white;
+  border: 2px solid white;
+}
+.btn-hero.secundario:hover {
+  background-color: #701574;
+  color: white;
+}
+
+.btn-enviar {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.btn-enviar:hover {
+  background-color: #c2185b;
+}
+
 .servicios-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -152,8 +263,8 @@ section {
   text-align: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease;
 }
-
 .servicio-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -182,7 +293,6 @@ section {
   margin-bottom: 1rem;
 }
 
-/* Galería */
 .galeria-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -197,19 +307,18 @@ section {
   border-radius: 8px;
   overflow: hidden;
 }
-
 .galeria-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
-
 .galeria-item:hover img {
   transform: scale(1.05);
 }
 
 .galeria-cta {
-  margin-top: 1rem; /* aumenta para bajar más los botones */
+  margin-top: 1rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -217,7 +326,6 @@ section {
   align-items: center;
 }
 
-/* Formularios */
 .form-contacto {
   max-width: 600px;
   margin: 0 auto;
@@ -226,14 +334,12 @@ section {
 .form-group {
   margin-bottom: 5px;
 }
-
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
   color: #333333;
 }
-
 .form-group input,
 .form-group textarea,
 .form-group select {
@@ -243,7 +349,6 @@ section {
   border-radius: 5px;
   font-size: 1rem;
 }
-
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
@@ -252,174 +357,19 @@ section {
   box-shadow: 0 0 0 2px rgba(206, 173, 229, 0.1);
 }
 
-.btn-enviar {
-  background-color: #e91e63;
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 25px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  width: 100%;
-}
-
-.btn-enviar:hover {
-  background-color: #c2185b;
-}
-
-/* Footer COMPARTIDO */
-footer {
-  background-color: #2c2c2c;
-  color: white;
-  padding: 3rem 5%;
-  margin-top: 4rem;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.footer-section h3 {
-  color: #ffd700;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-.footer-section p,
-.footer-section a {
-  color: #ccc;
-  margin-bottom: 0.5rem;
-  display: block;
-  text-decoration: none;
-}
-
-.footer-section a:hover {
-  color: white;
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.social-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: #444;
-  border-radius: 50%;
-}
-
-.social-links a:hover {
-  background-color: #ceade5;
-  transform: translateY(-2px);
-}
-
-.copyright {
+.hero {
+  background: #ceade5;
   text-align: center;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #444;
-  color: #999;
-  font-size: 0.9rem;
+  padding: 4rem 5%;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
 }
 
-/* Ajustes responsivos */
-@media (max-width: 992px) {
-  /* Ajusta el margin-top para el header fijo en pantallas medianas */
-  main {
-    margin-top: 110px;
-  }
-
-  /* Ajustes para navbar de Bootstrap */
-  .navbar .navbar-brand img {
-    height: 70px;
-  }
-
-  .hero {
-    padding: 4rem 2rem;
-  }
-
-  .galeria-item {
-    height: 220px;
-  }
-
-  .servicio-card {
-    padding: 1.5rem;
-  }
-
-  section {
-    padding: 2.5rem 3%;
-  }
-}
-
-@media (max-width: 768px) {
-  /* Header y navegación en móvil */
-  main {
-    margin-top: 130px;
-  }
-
-  /* Ajustes para navbar de Bootstrap en móvil */
-  .navbar-nav {
-    gap: 0.5rem;
-  }
-
-  .btn-reserva {
-    margin-left: 0;
-    align-self: flex-end;
-    margin-top: 0.5rem;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .galeria-item {
-    height: 180px;
-  }
-
-  .page-header h1 {
-    font-size: 1.8rem;
-  }
-
-  .servicios-grid {
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  main {
-    margin-top: 150px;
-  }
-
-  .navbar .navbar-brand img {
-    height: 60px;
-  }
-
-  .galeria-item {
-    height: 150px;
-  }
-
-  .btn-hero,
-  .btn-reserva,
-  .btn-enviar {
-    padding: 0.6rem 1rem;
-    font-size: 0.95rem;
-  }
-
-  section {
-    padding: 2rem 1.5rem;
-  }
-}
+/*# sourceMappingURL=style.css.map */
