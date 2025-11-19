@@ -1,4 +1,56 @@
-// Mixin para media queries (igual que tus breakpoints)
+@use "./variables" as *;
+
+// Keyframes fuera de los mixins
+@keyframes shake-top {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 0;
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes gentle-shake {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  75% {
+    transform: translateX(2px) rotate(1deg);
+  }
+}
+
+@keyframes breathe {
+  0%, 100% { 
+    transform: scale(1); 
+  }
+  50% { 
+    transform: scale(1.05); 
+  }
+}
+
+
+// Mixin para media queries
 @mixin respond-to($breakpoint) {
   @if $breakpoint == sm {
     @media (max-width: #{$breakpoint-sm}) { @content; }
@@ -11,7 +63,7 @@
   }
 }
 
-// Mixin para transiciones (como las que tienes en hover)
+// Mixin para transiciones
 @mixin transition($property: all) {
   transition: $property 0.3s ease;
 }
@@ -21,4 +73,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+// Mixin para animación shake-top
+@mixin shake-top {
+  animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+// Mixin para animación más suave
+@mixin gentle-shake {
+  animation: gentle-shake 0.6s ease-in-out both;
 }

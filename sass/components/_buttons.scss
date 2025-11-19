@@ -1,3 +1,6 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .btn-reserva {
   background-color: $color-primario;
   color: black;
@@ -12,6 +15,7 @@
   &:hover {
     background-color: $color-secundario;
     color: white;
+    @include gentle-shake; //  Animación al hover
   }
 }
 
@@ -27,6 +31,7 @@
 
   &:hover {
     background-color: $color-secundario;
+    @include gentle-shake; //  Animación al hover
   }
 
   &.secundario {
@@ -37,6 +42,7 @@
     &:hover {
       background-color: $color-secundario;
       color: white;
+      @include gentle-shake; //  Animación al hover
     }
   }
 }
@@ -55,5 +61,22 @@
 
   &:hover {
     background-color: $color-rosa-oscuro;
+    @include gentle-shake; //  Animación al hover
+  }
+}
+
+// CLASE: Para animación en móviles 
+.btn-attention {
+  position: relative;
+  
+  @include respond-to(md) {
+    animation: 
+      breathe 4s ease-in-out infinite,
+      gentle-shake 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3s infinite;
+  }
+  
+  @keyframes breathe {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
   }
 }

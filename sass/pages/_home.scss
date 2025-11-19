@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .hero {
   background: $color-primario;
   text-align: center;

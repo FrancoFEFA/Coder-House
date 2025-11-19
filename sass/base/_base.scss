@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 body {
   font-family: $fuente-principal;
   line-height: $line-height-base;

@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .form-contacto {
   max-width: 600px;
   margin: 0 auto;

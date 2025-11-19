@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 header {
   background-color: $color-fondo;
   box-shadow: $sombra-suave;
