@@ -332,9 +332,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ==========================
-   Ajustes responsivos
-   ========================== */
+/* Ajustes responsivos */
 @media (max-width: 992px) {
   /* Ajusta el margin-top para el header fijo en pantallas medianas */
   main {
