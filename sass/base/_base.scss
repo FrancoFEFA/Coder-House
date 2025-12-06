@@ -7,6 +7,29 @@ body {
   background-color: $color-fondo;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: $fuente-titulos;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-family: $fuente-subtitulos;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+h3, h4, h5, h6 {
+  font-family: $fuente-subtitulos;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
 main {
   margin-top: 100px;
   min-height: calc(100vh - 200px);

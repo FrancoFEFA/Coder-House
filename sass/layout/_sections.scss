@@ -14,6 +14,9 @@ section {
     font-size: $texto-4xl;
     color: $color-primario;
     margin-bottom: $espaciado-sm;
+    font-family: $fuente-titulos;
+    font-weight: 700;
+    letter-spacing: 0.5px;
   }
 
   p {

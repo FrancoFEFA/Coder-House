@@ -28,10 +28,16 @@
 }
 
 .galeria-cta {
-  margin-top: $espaciado-sm;
+  margin-top: $espaciado-xl;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 0.75rem;
+  gap: $espaciado-md;
   align-items: center;
+
+  p {
+    font-size: $texto-lg;
+    margin-bottom: 0;
+  }
 }

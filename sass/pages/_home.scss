@@ -8,6 +8,9 @@
   h1 {
     font-size: $texto-4xl;
     margin-bottom: $espaciado-sm;
+    font-family: $fuente-titulos;
+    font-weight: 700;
+    letter-spacing: 0.5px;
   }
 
   p {

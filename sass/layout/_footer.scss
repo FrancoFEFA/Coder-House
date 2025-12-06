@@ -21,6 +21,10 @@ footer {
     color: $color-dorado;
     margin-bottom: $espaciado-sm;
     font-size: $texto-lg;
+    font-family: $fuente-subtitulos;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
   }
 
   p,
