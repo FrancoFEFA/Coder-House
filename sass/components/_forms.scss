@@ -4,6 +4,7 @@
 .form-contacto {
   max-width: 600px;
   margin: 0 auto;
+  font-family: $fuente-principal;
 }
 
 .form-group {
@@ -14,6 +15,7 @@
     margin-bottom: $espaciado-xs;
     font-weight: bold;
     color: $color-texto;
+    font-family: $fuente-principal;
   }
 
   input,
@@ -24,6 +26,8 @@
     border: 1px solid $color-borde;
     border-radius: 5px;
     font-size: $texto-sm;
+    font-family: $fuente-principal;
+    color: $color-texto;
 
     &:focus {
       outline: none;

@@ -2,8 +2,8 @@
 @use "../abstracts/mixins" as *;
 
 .btn-reserva {
-  background-color: $color-primario;
-  color: black;
+  background-color: $color-secundario;
+  color: white;
   padding: $espaciado-sm $espaciado-lg;
   border-radius: $border-radius-btn;
   text-decoration: none;
@@ -15,7 +15,7 @@
 
   &:hover {
     background-color: $color-secundario;
-    color: white;
+    color: white; 
     @include gentle-shake; //  Animación al hover
   }
 }
@@ -50,7 +50,7 @@
 }
 
 .btn-enviar {
-  background-color: $color-rosa;
+  background-color: $color-secundario;
   color: white;
   border: none;
   padding: $espaciado-sm $espaciado-lg;
@@ -63,7 +63,7 @@
   @include transition;
 
   &:hover {
-    background-color: $color-rosa-oscuro;
+    background-color: $color-primario;
     @include gentle-shake; //  Animación al hover
   }
 }

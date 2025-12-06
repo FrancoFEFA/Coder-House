@@ -267,8 +267,8 @@ footer {
   }
 }
 .btn-reserva {
-  background-color: #ceade5;
-  color: black;
+  background-color: #701574;
+  color: white;
   padding: 1rem 2rem;
   border-radius: 25px;
   text-decoration: none;
@@ -311,7 +311,7 @@ footer {
 }
 
 .btn-enviar {
-  background-color: #e91e63;
+  background-color: #701574;
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -324,7 +324,7 @@ footer {
   transition: all 0.3s ease;
 }
 .btn-enviar:hover {
-  background-color: #c2185b;
+  background-color: #ceade5;
   animation: gentle-shake 0.6s ease-in-out both;
 }
 
@@ -430,6 +430,7 @@ footer {
 .form-contacto {
   max-width: 600px;
   margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 .form-group {
@@ -440,6 +441,7 @@ footer {
   margin-bottom: 0.5rem;
   font-weight: bold;
   color: #333333;
+  font-family: "Montserrat", sans-serif;
 }
 .form-group input,
 .form-group textarea,
@@ -449,6 +451,8 @@ footer {
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
 }
 .form-group input:focus,
 .form-group textarea:focus,
