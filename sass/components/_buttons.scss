@@ -8,6 +8,7 @@
   border-radius: $border-radius-btn;
   text-decoration: none;
   font-weight: bold;
+  font-family: $fuente-principal;
   margin-left: 10px;
   display: inline-block;
   @include transition;
@@ -27,6 +28,7 @@
   border-radius: $border-radius-btn;
   text-decoration: none;
   font-weight: bold;
+  font-family: $fuente-principal;
   @include transition;
 
   &:hover {
@@ -55,6 +57,7 @@
   border-radius: $border-radius-btn;
   font-size: $texto-sm;
   font-weight: bold;
+  font-family: $fuente-principal;
   cursor: pointer;
   width: 100%;
   @include transition;

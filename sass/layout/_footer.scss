@@ -6,6 +6,8 @@ footer {
   color: white;
   padding: $espaciado-xl 5%;
   margin-top: $espaciado-2xl;
+  font-family: $fuente-principal;
+  line-height: $line-height-base;
 }
 
 .footer-content {
@@ -18,10 +20,10 @@ footer {
 
 .footer-section {
   h3 {
-    color: $color-dorado;
+    color: $color-primario;
     margin-bottom: $espaciado-sm;
     font-size: $texto-lg;
-    font-family: $fuente-subtitulos;
+    font-family: $fuente-titulos;
     font-weight: 600;
     letter-spacing: 0.2px;
     text-transform: uppercase;
@@ -29,7 +31,7 @@ footer {
 
   p,
   a {
-    color: #ccc;
+    color: $color-fondo;
     margin-bottom: $espaciado-xs;
     display: block;
     text-decoration: none;

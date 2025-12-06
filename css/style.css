@@ -125,10 +125,12 @@ section {
 }
 
 footer {
-  background-color: #2c2c2c;
+  background-color: #373434;
   color: white;
   padding: 3rem 5%;
   margin-top: 4rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
 }
 
 .footer-content {
@@ -140,17 +142,17 @@ footer {
 }
 
 .footer-section h3 {
-  color: #ffd700;
+  color: #ceade5;
   margin-bottom: 1rem;
   font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 600;
   letter-spacing: 0.2px;
   text-transform: uppercase;
 }
 .footer-section p,
 .footer-section a {
-  color: #ccc;
+  color: #fae6fd;
   margin-bottom: 0.5rem;
   display: block;
   text-decoration: none;
@@ -271,6 +273,7 @@ footer {
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
   margin-left: 10px;
   display: inline-block;
   transition: all 0.3s ease;
@@ -289,6 +292,7 @@ footer {
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
   transition: all 0.3s ease;
 }
 .btn-hero:hover {
@@ -314,6 +318,7 @@ footer {
   border-radius: 25px;
   font-size: 1rem;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
   width: 100%;
   transition: all 0.3s ease;
