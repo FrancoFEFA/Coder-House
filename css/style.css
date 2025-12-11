@@ -480,4 +480,122 @@ footer {
   opacity: 0.9;
 }
 
+.seccion-sobre-mi {
+  padding: 4rem 0;
+}
+.seccion-sobre-mi .contenedor-sobre {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.intro-sobre {
+  margin-bottom: 3rem;
+}
+.intro-sobre h2 {
+  font-family: "Playfair Display", serif;
+  color: #701574;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.intro-sobre .subtitulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #666666;
+  font-style: italic;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.texto-biografia {
+  text-align: left;
+  line-height: 1.8;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+}
+.texto-biografia p {
+  margin-bottom: 1.5rem;
+}
+.texto-biografia strong {
+  color: #701574;
+  font-weight: 600;
+}
+.texto-biografia .titulo-filosofia {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.lista-valores {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.lista-valores li {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-top: 3px solid #ceade5;
+}
+.lista-valores li strong {
+  display: block;
+  color: #701574;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.seccion-formacion {
+  background: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(112, 21, 116, 0.05);
+  border: 1px solid rgba(206, 173, 229, 0.3);
+}
+.seccion-formacion h3 {
+  font-family: "Playfair Display", serif;
+  color: #701574;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.seccion-formacion .grid-formacion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.seccion-formacion .item-formacion {
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.seccion-formacion .item-formacion:hover {
+  transform: translateY(-5px);
+}
+.seccion-formacion .item-formacion .icono-formacion {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.seccion-formacion .item-formacion h4 {
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.seccion-formacion .item-formacion p {
+  color: #666666;
+  font-size: 0.95rem;
+}
+
+.acciones-finales {
+  margin-top: 4rem;
+  text-align: center;
+}
+.acciones-finales .btn-hero {
+  margin: 0.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */

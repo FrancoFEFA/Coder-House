@@ -1,0 +1,142 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// Sección Principal Sobre Mí
+.seccion-sobre-mi {
+  padding: $espaciado-2xl 0; // 4rem
+
+  .contenedor-sobre {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 $espaciado-sm; // 1rem
+  }
+}
+
+// Introducción
+.intro-sobre {
+  margin-bottom: $espaciado-xl; // 3rem
+
+  h2 {
+    font-family: $fuente-titulos; // Playfair Display
+    color: $color-secundario; // #701574
+    font-size: $texto-4xl; // 2.5rem
+    margin-bottom: $espaciado-xs; // 0.5rem
+  }
+
+  .subtitulo {
+    font-family: $fuente-subtitulos; // Montserrat
+    font-size: $texto-lg; // 1.2rem
+    color: $color-gris; // #666
+    font-style: italic;
+    margin-bottom: $espaciado-lg; // 2rem
+    display: block;
+  }
+}
+
+// Texto y Filosofía
+.texto-biografia {
+  text-align: left;
+  line-height: 1.8;
+  color: $color-texto; // #333
+  font-family: $fuente-principal; // Montserrat
+
+  p {
+    margin-bottom: $espaciado-md; // 1.5rem
+  }
+
+  strong {
+    color: $color-secundario;
+    font-weight: 600; // Bold para énfasis
+  }
+
+  .titulo-filosofia {
+    margin-bottom: $espaciado-sm; // 1rem
+    font-weight: 600;
+  }
+}
+
+// Lista de Valores/Pilares
+.lista-valores {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: $espaciado-md; // 1.5rem
+
+  li {
+    background: $color-blanco;
+    padding: $espaciado-md; // 1.5rem
+    border-radius: $border-radius; // 8px
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 3px solid $color-primario; // #ceade5
+
+    strong {
+      display: block;
+      color: $color-secundario;
+      font-family: $fuente-titulos;
+      font-size: $texto-lg; // 1.2rem
+      margin-bottom: $espaciado-xs; // 0.5rem
+    }
+  }
+}
+
+// Sección Formación (Tarjeta Diferenciada)
+.seccion-formacion {
+  background: $color-blanco;
+  padding: $espaciado-xl $espaciado-lg; // 3rem 2rem
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(112, 21, 116, 0.05);
+  border: 1px solid rgba($color-primario, 0.3);
+
+  h3 {
+    font-family: $fuente-titulos;
+    color: $color-secundario;
+    margin-bottom: $espaciado-lg; // 2rem
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .grid-formacion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: $espaciado-lg; // 2rem
+  }
+
+  .item-formacion {
+    text-align: center;
+    padding: $espaciado-md; // 1.5rem
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .icono-formacion {
+      font-size: 2.5rem;
+      margin-bottom: $espaciado-sm; // 1rem
+    }
+
+    h4 {
+      color: $color-texto; // #333
+      font-weight: 700;
+      margin-bottom: $espaciado-xs; // 0.5rem
+      font-size: $texto-md; // 1.1rem approx
+    }
+
+    p {
+      color: $color-gris; // #666
+      font-size: 0.95rem;
+    }
+  }
+}
+
+// Botones de acción
+.acciones-finales {
+  margin-top: $espaciado-2xl; // 4rem
+  text-align: center;
+
+  .btn-hero {
+    margin: $espaciado-xs; // 0.5rem
+  }
+}
